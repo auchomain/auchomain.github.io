@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>website</title>
+<div id="show_time">  
+    <script>
+    setInterval("fun(show_time)",1);
+    function fun(timeID) { 
+    var date = new Date();
+    var y = date.getFullYear(); 
+    var m =date.getMonth()+1;
+    var d = date.getDate();
+    var w = date.getDay();
+    var ww = ' 星期'+'日一二三四五六'.charAt(new Date().getDay()) ;
+    var h = date.getHours();
+    var minute = date.getMinutes()
+    var s = date.getSeconds();
+    if(m<10){ m = "0" +m; }
+    if(d<10) { d = "0" + d; }
+    if(h<10) { h = "0" + h; }
+    if(minute<10) { minute = "0" + minute; }
+    if(s<10) { s = "0" + s; }
+    document.getElementById(timeID.id).innerHTML =  y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s+"  "+ww;
+    }
+</script>
+</div>
+    
+</head>
+<body>
+    <img src="images\1.png" width="100%" />
+    <div id="menu" style="height:450px;width:700px;float:left;">
+        <img src="images\2.png"/>
+        </div>
+         
+        <div id="content" style="height:450px;width:400px;float:left;">
+            <h2>金水杯化学竞赛 详情</h2>
+            <h3>关于 AuChO</h3>
+            <a href="sources/list.pdf" target="_black">命题人团队</a>
+            <h3>“金水杯”试题</h3>
+            <a href="sources/5th_aucho.pdf" target="_black">第5届“金水杯”化学竞赛试题</a>
+            <!--<a href="sources\5th_aucho.pdf" target="_black">第5届“金水杯”化学竞赛答案</a>-->
+            <p>第5届“金水杯”化学竞赛答案：此项暂未开放，如有需要直接去班里找出题人sc</p>
+            <a target="_blank" href = "https://tony20051201.github.io/resources/AuChO_Junior_1_preview.pdf"><span style="color:gold;">Au</span>ChO Junior 1 <span style="color:#22ccff">Preview</span></a>
+            <h3>实用工具</h3>
+            <a href="upload.html" target="_black">文件上传</a>
+            <p><a href="painting.html" target="_black">冬日绘板</a> 暂未开放</p>
+            <h3>化学竞赛最新新闻 upd:2021.12.10</h3>
+            <p>高一自测题部分内容公开，见试题栏</p>
+            <p style="color:white">胡签没有爸爸</p>
+            <p style="color:white">当xn拒绝配合时，胡签开始自交，生得一女儿</p>
+            <p style="color:white">chc在slb不在时表示想薅pyn头发</p>
+            <p style="color:white">胡签让yyx帮忙给jlt写表白信</p>
+        </div>
+    </div>
+    <div id="footer" style="clear:both;text-align:center;"> </div>
+    <p>如果你想在此网站上获取资料，你需要懂得一些信息技术基本常识。</p>
+    <p>网页制作：高二7班 施畅  qq 1870322854</p>
+    <p>参与：高一8班 吴正韬</p>
+    <p>Click it if you want a visit  <a href="https://github.com/laocongsc/laocongsc.github.io">laocong's github</a></p>
+</body>
+</html>
